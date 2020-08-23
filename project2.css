@@ -348,6 +348,15 @@ font-style: italic;
     font-weight: bold;
 
 }
+@media(max-width:410px){
+    .center{
+        display: none;
+    }
+    .left{
+        position: relative;
+        left: 60px;
+    }
+}
 @media (max-width:906px){
     body{
         font-size: 14px;
