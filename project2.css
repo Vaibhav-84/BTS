@@ -405,22 +405,15 @@ font-style: italic;
     animation-duration: 5s;
     }
     @keyframes colorfull{
-   
         0%{
-        
-            left:-25px;
-            
+            left:-25px;    
         }
         50%{
-        
         left:30px;
-        
         }
         100%{
         left:-25px;
         }
-      
-        
     }
 }
 body::before{
