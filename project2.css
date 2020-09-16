@@ -328,13 +328,18 @@ font-style: italic;
     font-weight: bold;
 
 }
-@media(max-width:410px){
-    .center{
+@media(max-width:906px){
+    /* .center{
         display: none;
     }
     .left{
         position: relative;
         left: 60px;
+    } */
+    .Search{
+      /* not */
+        display: none;  
+    
     }
 }
 @media (max-width:906px){
@@ -353,23 +358,25 @@ font-style: italic;
         font-size: 10px;
          
        }
-       .Search{
+       /* .Search{
       
         display: none;
     
-    }
+    } */
     .center{
+        display: none;
+    }
+    .left{
+        position: relative;
+        left: 60px;
+    }
+    /* .center{ */
   
         /* border: 2px solid blue; */
-     
+/*      
        width: 270px;
-       left: 57px;
-      
-        
-    
-        
-      
-    }
+       left: 57px;      
+    } */
     .btsimg{
         width:300px;
         height: auto;
