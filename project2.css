@@ -343,7 +343,7 @@ font-style: italic;
     }
    
     #img-caption{
-        margin-left: 11%;
+        margin-left: 14%;
         font-size: 10px;
     }
     .navbar li{
@@ -400,6 +400,27 @@ font-style: italic;
     .container{
         
         margin-top: 100px;
+    }
+    #img-caption{
+    animation-duration: 5s;
+    }
+    @keyframes colorfull{
+   
+        0%{
+        
+            left:-25px;
+            
+        }
+        50%{
+        
+        left:30px;
+        
+        }
+        100%{
+        left:-25px;
+        }
+      
+        
     }
 }
 body::before{
