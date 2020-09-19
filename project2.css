@@ -435,13 +435,33 @@ body::before{
     z-index: -1;
 }
 
+/* footer css */
 footer{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     text-align: center;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(43, 39, 39);
     color: white;
     padding: 10px;
     position: relative;
     top: 94px;
     width: 100%;
+}
+
+.fa{
+    padding: 10px;
+}
+.socal a{
+    color: rgb(88, 86, 86) ;
+}
+.fa-facebook-official:hover{
+color: rgb(46, 4, 160);
+}
+.fa-instagram:hover{
+color: rgb(241, 74, 52);
+}
+.fa-github:hover{
+color: rgb(56, 55, 55);
+}
+.fa-twitter:hover{
+color: rgb(24, 159, 201);
 }
