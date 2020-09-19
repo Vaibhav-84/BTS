@@ -5,12 +5,8 @@ body{
  
 }
 
-.header{
-    
-}
+/* logo section */
 .left{
-    /* border: 2px solid red; */
-    
     display: inline-block;
     position: absolute;
     top: 22px;
@@ -23,9 +19,9 @@ body{
 transform: scale(1.2);
   
 }
+
+/* navbar section */
 .center{
-  
-    /* border: 2px solid blue; */
     border-radius: 10px;
     display: block;
     margin: auto;
@@ -34,23 +30,18 @@ transform: scale(1.2);
     top: 22px;
     background-color: black;
     border: 2px solid gray;
-    
-
-    
-  
 }
 
-
+/* search input  */
 .right{
-    
-    /* border: 2px solid green; */
     display: inline-block;
     position: absolute;
     top: 2px;
     right: -6px;
     margin: 30px 50px;
-
 }
+
+/* .navbar */
 .navbar li{
     display: inline-block;
     padding: 5px;
@@ -64,6 +55,7 @@ transform: scale(1.2);
 .navbar a:hover{
    color: purple;
 }
+/* for image of logo and main page image  */
 div img{
     width: 56px;
     height: 61px;
@@ -74,7 +66,6 @@ div img{
 
 h3{
     font-size: 10px;
-   
 }
 .Search{
     padding: 5px 14px;
@@ -93,9 +84,7 @@ h3{
 }
 .btsimg:hover{
 opacity: 0;
-cursor: pointer;
-
-   
+cursor: pointer;  
 }
 
 .info{
@@ -147,16 +136,13 @@ animation-duration: 10s;
 animation-iteration-count: infinite;
 font-style: italic;
 }
-.image{
-    /* background-color: purple; */
-}
+/* for Purple means Love forever :) line  */
 .magic{
     position: relative;
     text-align: center;
     top: 334px;
     color: white;
     font-size: 35px ;
-
 }
 
 .container{
@@ -176,6 +162,7 @@ font-style: italic;
     margin: 50px;
     padding: 5px;
 }
+/* id of div before image tag of member  */
 #rm{
     color: wheat;
     font-size: 16px;
@@ -249,7 +236,7 @@ font-style: italic;
     
 }
 
-
+/* id of image of member  */
 .RM{
     width: 200px;
     height: 250px;
@@ -328,16 +315,9 @@ font-style: italic;
     font-weight: bold;
 
 }
+/* media */
 @media(max-width:906px){
-    /* .center{
-        display: none;
-    }
-    .left{
-        position: relative;
-        left: 60px;
-    } */
     .Search{
-      /* not */
         display: none;  
     
     }
@@ -358,11 +338,7 @@ font-style: italic;
         font-size: 10px;
          
        }
-       /* .Search{
       
-        display: none;
-    
-    } */
     .center{
         display: none;
     }
@@ -370,18 +346,9 @@ font-style: italic;
         position: relative;
         left: 60px;
     }
-    /* .center{ */
-  
-        /* border: 2px solid blue; */
-/*      
-       width: 270px;
-       left: 57px;      
-    } */
     .btsimg{
         width:300px;
         height: auto;
-     
-       
     }
     .magic{
      
@@ -423,6 +390,8 @@ font-style: italic;
         }
     }
 }
+
+/* for setting image on body background */
 body::before{
     content: "";
     background: url("hey.jpg") no-repeat center center/cover;
@@ -437,7 +406,6 @@ body::before{
 
 /* footer css */
 footer{
-    /* border: 2px solid black; */
     text-align: center;
     background-color: rgb(43, 39, 39);
     color: white;
