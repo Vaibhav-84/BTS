@@ -135,152 +135,81 @@ h3 {
   font-size: 35px;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-  height: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  top: 104px;
+
+/* new one  */
+.container
+{
+    position: relative;
+    top: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 30px; */
 }
-.item {
-  width: 200px;
-  height: 510px;
-  border: 4px solid black;
-  margin: 50px;
-  padding: 5px;
-}
-/* id of div before image tag of member  */
-#rm {
-  color: wheat;
-  font-size: 16px;
-
-  border-radius: 10px;
-
-  font-family: Arial;
-  border: 2px solid rgb(47, 174, 248);
-}
-
-#jin {
-  color: white;
-  font-size: 16px;
-  border: 2px solid palevioletred;
-
-  border-radius: 10px;
-
-  font-family: Arial;
-}
-
-#jimin {
-  color: white;
-  font-size: 16px;
-  border: 2px solid gold;
-
-  border-radius: 10px;
-
-  font-family: Arial;
-}
-
-#jk {
-  color: white;
-  font-size: 16px;
-  border: 2px solid purple;
-
-  border-radius: 10px;
-
-  font-family: Arial;
-}
-
-#v {
-  color: white;
-  font-size: 16px;
-
-  border: 2px solid green;
-
-  font-family: Arial;
-}
-
-#j-hope {
-  color: white;
-  font-size: 16px;
-  border: 2px solid red;
-
-  border-radius: 10px;
-
-  font-family: Arial;
-}
-
-#suga {
-  font-size: 16px;
-  border: 2px solid gray;
-
-  border-radius: 10px;
-  color: white;
-  font-family: Arial;
-}
-
-/* id of image of member  */
-.RM {
-  width: 200px;
-  height: 250px;
-  border: 2px solid BLUE;
-}
-
-.JIN {
-  width: 200px;
-  height: 250px;
-  border: 2px solid pink;
-}
-
-.JIMIN {
-  width: 200px;
-  height: 250px;
-  border: 2px solid gold;
-}
-.JK {
-    width: 200px;
-  height: 250px;
-  border: 2px solid purple;
-}
-
-.V {
-    width: 200px;
-    height: 250px;
-    border: 2px solid green;
-}
-
-.J-HOPE {
-    width: 200px;
-  height: 250px;
-  border: 2px solid red;
-}
-
-.SUGA {
-    width: 200px;
-    height: 250px;
-    border: 2px solid white;
-}
-/* hover effect for member images */
-.JIMIN:hover,.JK:hover,.RM:hover,.JIN:hover,.V:hover,.J-HOPE:hover,.SUGA:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.su {
-    display: inline;
+.container::before {
+    content: "";
+    background: url("/images/bts.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
     position: absolute;
-    left: 384px;
-    border: 2px solid orange;
-    border-radius: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 10px;
-  font-style: italic;
-  font-weight: bold;
+    top: 10px;
+    bottom: 0px;
+    /* opacity: 0.5; */
+    z-index: -1;
+  }
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 100px 10px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
 }
+.container .card:hover
+{
+    height: 500px;
+}
+.container .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    border-radius: 17px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img{
+    width: 100%;
+    height: 100%;
+}
+.container .card .content 
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px ;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3;
+} 
+/* end  */
 
 
 /* for setting image on body background */
