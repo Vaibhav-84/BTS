@@ -1,435 +1,423 @@
-body{
-    color: white;
-    
-    background-color: black;
- 
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  background-color: black;
 }
 
 /* logo section */
-.left{
-    display: inline-block;
-    position: absolute;
-    top: 22px;
-    left: -41px;
-    margin: 3px 65px;
-    outline: none;
-  
+.left {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  left: -41px;
+  margin: 3px 65px;
+  outline: none;
 }
-.left:hover{
-transform: scale(1.2);
-  
+.left:hover {
+  transform: scale(1.2);
 }
 
 /* navbar section */
-.center{
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-   width: 378px;
-    position: relative;
-    top: 22px;
-    background-color: black;
-    border: 2px solid gray;
+.center {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  width: 378px;
+  position: relative;
+  top: 22px;
+  background-color: black;
+  border: 2px solid gray;
 }
 
 /* search input  */
-.right{
-    display: inline-block;
-    position: absolute;
-    top: 2px;
-    right: -6px;
-    margin: 30px 50px;
+.right {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  margin: 30px 50px;
 }
 
 /* .navbar */
-.navbar li{
-    display: inline-block;
-    padding: 5px;
-    margin: 1px;
-     
-   }
-.navbar a{
-    text-decoration: none;
-    color: white;
+.navbar li {
+  display: inline-block;
+  padding: 5px;
+  margin: 1px;
 }
-.navbar a:hover{
-   color: purple;
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: purple;
 }
 /* for image of logo and main page image  */
-div img{
-    width: 56px;
-    height: 61px;
-    display: block;
-    margin: auto;
-    border-radius: 20px;
+div img {
+  width: 56px;
+  height: 61px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
 }
 
-h3{
-    font-size: 10px;
+h3 {
+  font-size: 10px;
 }
-.Search{
-    padding: 5px 14px;
-    margin: 14px 15px;
-    border-radius: 20px;;
-    outline: none;
+.Search {
+  padding: 5px 14px;
+  margin: 14px 15px;
+  border-radius: 20px;
+  outline: none;
 }
-.btsimg{
-    width:500px;
-    height: auto;
-    position: relative;
-    top: 100px;
-    border: 2px solid gray;
-    border-radius: 20px;
-   
+.btsimg {
+  width: 500px;
+  height: auto;
+  position: relative;
+  top: 100px;
+  border: 2px solid gray;
+  border-radius: 20px;
 }
-.btsimg:hover{
-opacity: 0;
-cursor: pointer;  
-}
-
-.info{
-    position: relative;
-    top: 250px;
-    left: 200px;
-    padding-left: 72px;
-
-}
-.member{
-    text-align: center;
+.btsimg:hover {
+  opacity: 0;
+  cursor: pointer;
 }
 
-@keyframes colorfull{
-   
-    0%{
-    
-        left:0px;
-        
-    }
-    25%{
-    
-    left:100px;
-    
-    }
-    50%{
-    
-    left:0px;
-    }
-    75%{
-    
-    left:-100px;
-    }
-    100%{
-    left:0px;
-    }
-    
+.info {
+  position: relative;
+  top: 250px;
+  left: 200px;
+  padding-left: 72px;
+}
+.member {
+  text-align: center;
 }
 
-#img-caption{
-    display: inline-block;
-    margin-left: 38%;
-text-align: center;
-color: white;
-position: relative;
-top: 100px;
-animation-name: colorfull;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-font-style: italic;
+@keyframes colorfull {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: 0px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+#img-caption {
+  display: inline-block;
+  margin-left: 38%;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 100px;
+  animation-name: colorfull;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  font-style: italic;
 }
 /* for Purple means Love forever :) line  */
-.magic{
-    position: relative;
-    text-align: center;
-    top: 334px;
-    color: white;
-    font-size: 35px ;
+.magic {
+  position: relative;
+  text-align: center;
+  top: 334px;
+  color: white;
+  font-size: 35px;
 }
 
-.container{
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-top: 200px;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    top: 104px;
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: 104px;
 }
-.item{
-    width: 200px;
-    height: 510px;
-    border: 4px solid black;
-    margin: 50px;
-    padding: 5px;
+.item {
+  width: 200px;
+  height: 510px;
+  border: 4px solid black;
+  margin: 50px;
+  padding: 5px;
 }
 /* id of div before image tag of member  */
-#rm{
-    color: wheat;
-    font-size: 16px;
-   
-   
-    border-radius: 10px;
-   
-    font-family: Arial;
-    border: 2px solid rgb(47, 174, 248);
+#rm {
+  color: wheat;
+  font-size: 16px;
+
+  border-radius: 10px;
+
+  font-family: Arial;
+  border: 2px solid rgb(47, 174, 248);
 }
 
-#jin{
-    color: white;
-    font-size: 16px;
-    border: 2px solid palevioletred;
- 
-    border-radius: 10px;
-   
-    font-family: Arial;
+#jin {
+  color: white;
+  font-size: 16px;
+  border: 2px solid palevioletred;
+
+  border-radius: 10px;
+
+  font-family: Arial;
 }
 
-#jimin{
-    color: white;
-    font-size: 16px;
-    border: 2px solid gold;
-  
-    border-radius: 10px;
-   
-    font-family: Arial;
+#jimin {
+  color: white;
+  font-size: 16px;
+  border: 2px solid gold;
+
+  border-radius: 10px;
+
+  font-family: Arial;
 }
 
-#jk{
-    color: white;
-    font-size: 16px;
-    border: 2px solid purple;
-  
-    border-radius: 10px;
- 
-    font-family: Arial;
+#jk {
+  color: white;
+  font-size: 16px;
+  border: 2px solid purple;
+
+  border-radius: 10px;
+
+  font-family: Arial;
 }
 
-#v{
-    color: white;
-    font-size: 16px;
-   
-    border: 2px solid green;
-  
-    font-family: Arial;
+#v {
+  color: white;
+  font-size: 16px;
+
+  border: 2px solid green;
+
+  font-family: Arial;
 }
 
-#j-hope{
-    color: white;
-    font-size: 16px;
-    border: 2px solid red;
-    
-    border-radius: 10px;
-    
-    font-family: Arial;
+#j-hope {
+  color: white;
+  font-size: 16px;
+  border: 2px solid red;
+
+  border-radius: 10px;
+
+  font-family: Arial;
 }
 
+#suga {
+  font-size: 16px;
+  border: 2px solid gray;
 
-#suga
-{
-    font-size: 16px;
-    border: 2px solid gray;
-
-    border-radius: 10px;
-    color: white;
-    font-family: Arial;
-   
-    
+  border-radius: 10px;
+  color: white;
+  font-family: Arial;
 }
 
 /* id of image of member  */
-.RM{
-    width: 200px;
-    height: 250px;
-    border: 2px solid BLUE;
+.RM {
+  width: 200px;
+  height: 250px;
+  border: 2px solid BLUE;
+}
 
+.JIN {
+  width: 200px;
+  height: 250px;
+  border: 2px solid pink;
 }
-.RM:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-   
+
+.JIMIN {
+  width: 200px;
+  height: 250px;
+  border: 2px solid gold;
 }
-.JIN{
+.JK {
     width: 200px;
-    height: 250px;
-    border: 2px solid pink;
+  height: 250px;
+  border: 2px solid purple;
 }
-.JIN:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-.JIMIN{
-    width: 200px;
-    height: 250px;
-    border: 2px solid gold;
-}
-.JIMIN:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-.JK{
-    width: 200px;
-    height: 250px;
-    border: 2px solid purple;
-}
-.JK:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-.V{
+
+.V {
     width: 200px;
     height: 250px;
     border: 2px solid green;
 }
-.V:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-.J-HOPE{
+
+.J-HOPE {
     width: 200px;
-    height: 250px;
-    border: 2px solid red;
+  height: 250px;
+  border: 2px solid red;
 }
-.J-HOPE:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-.SUGA{
+
+.SUGA {
     width: 200px;
     height: 250px;
     border: 2px solid white;
 }
-.SUGA:hover{
-    transform: scale(1.2);
-    cursor: pointer;
+/* hover effect for member images */
+.JIMIN:hover,.JK:hover,.RM:hover,.JIN:hover,.V:hover,.J-HOPE:hover,.SUGA:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.5s;
 }
-.su{
+.su {
     display: inline;
     position: absolute;
     left: 384px;
     border: 2px solid orange;
     border-radius: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;;
-    padding: 10px;
-    font-style: italic;
-    font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
 
-}
-/* media */
-@media(max-width:906px){
-    .Search{
-        display: none;  
-    
-    }
-}
-@media (max-width:906px){
-    body{
-        font-size: 14px;
-    }
-   
-    #img-caption{
-        margin-left: 14%;
-        font-size: 10px;
-    }
-    .navbar li{
-        display: inline-block;
-        padding: 2px;
-        margin: 1px;
-        font-size: 10px;
-         
-       }
-      
-    .center{
-        display: none;
-    }
-    .left{
-        position: relative;
-        left: 60px;
-    }
-    .btsimg{
-        width:300px;
-        height: auto;
-    }
-    .magic{
-     
-        top: 260px;
-      
-        font-size: 14px ;
-    
-    }
-    div img{
-        width: 49px;
-        height: 50px;
-       
-    }
-    .item{
-        width: 300px;
-        height: 457px;
-        border: 4px solid black;
-        margin: 10px;
-        padding: 3px;
-        font-size: 14px;
-        text-align: center;
-    }
-    .container{
-        
-        margin-top: 100px;
-    }
-    #img-caption{
-    animation-duration: 5s;
-    }
-    @keyframes colorfull{
-        0%{
-            left:-25px;    
-        }
-        50%{
-        left:30px;
-        }
-        100%{
-        left:-25px;
-        }
-    }
-}
 
 /* for setting image on body background */
-body::before{
-    content: "";
-    background: url("hey.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    opacity: 0.2;
-    z-index: -1;
+body::before {
+  content: "";
+  background: url("hey.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* audio section */
+audio {
+  width: 200px;
+  height: 20px;
+  outline-style: none;
+  position: relative;
+  top: auto;
+}
+/* video section */
+.allmembervideo{
+  width: 100%;
+  height:70vh;
+  position: relative;
+  /* overflow: hidden; */
+}
+.video{
+  width: 100%;
+  height: 70vh;
+  outline: none;
 }
 
 /* footer css */
-footer{
-    text-align: center;
-    background-color: rgb(43, 39, 39);
-    color: white;
-    padding: 10px;
-    position: relative;
-    top: 94px;
-    width: 100%;
+footer {
+  text-align: center;
+  background-color: rgb(43, 39, 39);
+  color: white;
+  padding: 10px;
+  position: relative;
+  top: 94px;
+  width: 100%;
+  margin: 10px;
 }
 
-.fa{
-    padding: 10px;
+.fa {
+  padding: 10px;
 }
-.socal a{
-    color: rgb(88, 86, 86) ;
+.socal a {
+  color: rgb(88, 86, 86);
 }
-.fa-facebook-official:hover{
-color: rgb(46, 4, 160);
+.fa-facebook-official:hover {
+  color: rgb(46, 4, 160);
 }
-.fa-instagram:hover{
-color: rgb(241, 74, 52);
+.fa-instagram:hover {
+  color: rgb(241, 74, 52);
 }
-.fa-github:hover{
-color: rgb(56, 55, 55);
+.fa-github:hover {
+  color: rgb(56, 55, 55);
 }
-.fa-twitter:hover{
-color: rgb(24, 159, 201);
+.fa-twitter:hover {
+  color: rgb(24, 159, 201);
+}
+/* media */
+@media (max-width: 906px) {
+  .Search {
+    display: none;
+  }
+  /* .video{
+    width: 100%;
+    height: 40vh;
+  } */
+}
+@media (max-width: 906px) {
+  body {
+    font-size: 14px;
+  }
+
+  #img-caption {
+    margin-left: 14%;
+    font-size: 10px;
+  }
+  .navbar li {
+    display: inline-block;
+    padding: 2px;
+    margin: 1px;
+    font-size: 10px;
+  }
+
+  .center {
+    display: none;
+  }
+  .left {
+    position: relative;
+    left: 60px;
+  }
+  .btsimg {
+    width: 300px;
+    height: auto;
+  }
+  .magic {
+    top: 260px;
+
+    font-size: 14px;
+  }
+  div img {
+    width: 49px;
+    height: 50px;
+  }
+  .item {
+    width: 300px;
+    height: 457px;
+    border: 4px solid black;
+    margin: 10px;
+    padding: 3px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .container {
+    margin-top: 100px;
+  }
+  #img-caption {
+    animation-duration: 5s;
+  }
+  @keyframes colorfull {
+    0% {
+      left: -25px;
+    }
+    50% {
+      left: 30px;
+    }
+    100% {
+      left: -25px;
+    }
+  }
+
+  
 }
