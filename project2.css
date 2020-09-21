@@ -151,7 +151,7 @@ h3 {
 }
 .container::before {
     content: "";
-    background: url("/images/bts.jpg") no-repeat center center/cover;
+    background: url("images/bts.jpg") no-repeat center center/cover;
     background-attachment: fixed;
     width: 100%;
     height: auto;
@@ -258,7 +258,7 @@ footer {
   position: relative;
   top: 94px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .fa {
