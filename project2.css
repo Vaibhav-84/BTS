@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -6,6 +6,7 @@
 body {
   color: white;
   background-color: black;
+  overflow-x: hidden;
 }
 
 /* logo section */
@@ -16,6 +17,7 @@ body {
   left: -41px;
   margin: 3px 65px;
   outline: none;
+  transition: all 0.3s ease-in;
 }
 .left:hover {
   transform: scale(1.2);
@@ -80,6 +82,7 @@ h3 {
   top: 100px;
   border: 2px solid gray;
   border-radius: 20px;
+  transition: all 0.6s ease-in-out;
 }
 .btsimg:hover {
   opacity: 0;
@@ -135,88 +138,151 @@ h3 {
   font-size: 35px;
 }
 
-
-/* new one  */
-.container
-{
-    position: relative;
-    top: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-    /* padding: 30px; */
+/* cards section  */
+.container {
+  position: relative;
+  top: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .container::before {
-    content: "";
-    background: url("images/bts.jpg") no-repeat center center/cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    bottom: 0px;
-    /* opacity: 0.5; */
-    z-index: -1;
-  }
-.container .card{
-    position: relative;
-    max-width: 300px;
-    height: 215px;
-    background: #fff;
-    margin: 100px 10px;
-    padding: 20px 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in-out;
+  content: "";
+  background: url("images/bts.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  filter: blur(3px);
+  z-index: -1;
 }
-.container .card:hover
-{
-    height: 500px;
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 215px;
+  margin: 100px 10px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
-.container .card .imgBx
-{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    border-radius: 17px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+.container .card:hover {
+  height: 500px;
 }
-.container .card .imgBx img{
-    width: 100%;
-    height: 100%;
-}
-.container .card .content 
-{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px ;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-.container .card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3;
-} 
-/* end  */
 
+.container .card:hover .imgBx img {
+  visibility: hidden;
+}
+.container .card:hover .imgBx {
+  border: none;
+  box-shadow: none;
+}
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  border-radius: 17px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -30px;
+  transition-delay: 0.3s;
+}
+
+/* card design  */
+.rm,
+.jin,
+.jimin,
+.jk,
+.v,
+.jhope,
+.suga {
+  background-color: black;
+}
+.rm::before,
+.jin::before,
+.jimin::before,
+.jk::before,
+.v::before,
+.jhope::before,
+.suga::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.rm::before {
+  background-image: url("images/rmmic.jpg");
+  border: 2px solid rgb(58, 153, 241);
+}
+.jin::before {
+  background-image: url("images/jinmic.jpg");
+  border: 2px solid rgb(117, 11, 103);
+}
+.jimin::before {
+  background-image: url("images/jiminmic.jpg");
+  border: 2px solid rgb(175, 231, 21);
+}
+.jk::before {
+  background-image: url("images/jkmic.jpg");
+  border: 2px solid rgb(119, 19, 177);
+}
+.v::before {
+  background-image: url("images/vmic.jpg");
+  border: 2px solid rgb(17, 100, 28);
+}
+.jhope::before {
+  background-image: url("images/jhopemic.jpg");
+  border: 2px solid rgb(187, 17, 17);
+}
+.suga::before {
+  background-image: url("images/sugamic.jpg");
+  border: 2px solid rgb(201, 213, 224);
+}
+
+/* card design end */
+
+/* card section end  */
 
 /* for setting image on body background */
 body::before {
   content: "";
-  background: url("hey.jpg") no-repeat center center/cover;
+  background: url("images/group.jpg") no-repeat center center/cover;
   width: 100%;
   height: auto;
   position: fixed;
@@ -233,20 +299,21 @@ audio {
   outline-style: none;
   position: relative;
   top: auto;
+  margin-top: 20px;
 }
 /* video section */
-.allmembervideo{
+.allmembervideo {
   width: 100%;
-  height:70vh;
+  height: 70vh;
   position: relative;
   /* overflow: hidden; */
 }
-.video{
+.video {
   width: 100%;
   height: 70vh;
   outline: none;
   position: relative;
-  top: 200px;
+  top: 231px;
 }
 
 /* footer css */
@@ -258,7 +325,7 @@ footer {
   position: relative;
   top: 94px;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 164px;
 }
 
 .fa {
@@ -268,7 +335,7 @@ footer {
   color: rgb(88, 86, 86);
 }
 .fa-facebook-official:hover {
-  color: rgb(46, 4, 160);
+  color: rgb(22, 101, 219);
 }
 .fa-instagram:hover {
   color: rgb(241, 74, 52);
@@ -289,17 +356,12 @@ footer {
   body {
     font-size: 14px;
   }
-  html,body{
+
+  html,
+  body {
     overflow-x: hidden;
   }
 
-  /* .video{
-    width: 100%;
-    height: 70vh;
-    outline: none;
- 
-    position: relative;
-  } */
   #img-caption {
     margin-left: 14%;
     font-size: 10px;
