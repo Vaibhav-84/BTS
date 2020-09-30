@@ -428,6 +428,9 @@ footer {
   .Search {
     display: none;
   }
+  body::-webkit-scrollbar{
+    width: 0px;
+  }
 }
 @media (max-width: 480px) {
   body {
