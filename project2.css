@@ -2,6 +2,66 @@
   margin: 0;
   padding: 0;
 }
+/* prelader */
+#loading {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp {
+  width: 6px;
+  border-radius: 10px;
+  padding: 0px 5px;
+  margin: 0px 3px;
+  animation: 1s linear infinite alternate load;
+}
+.sp:nth-child(1) {
+  animation-delay: 0.1s;
+  background-color: rgb(35, 172, 226);
+}
+.sp:nth-child(2) {
+  animation-delay: 0.2s;
+  background-color: rgb(238, 53, 198);
+}
+.sp:nth-child(3) {
+  animation-delay: 0.3s;
+  background-color: rgb(247, 226, 44);
+}
+.sp:nth-child(4) {
+  animation-delay: 0.4s;
+  background-color: rgb(157, 23, 235);
+}
+.sp:nth-child(5) {
+  animation-delay: 0.5s;
+  background-color: rgb(39, 235, 82);
+}
+.sp:nth-child(6) {
+  animation-delay: 0.6s;
+  background-color: rgb(240, 28, 28);
+}
+.sp:nth-child(7) {
+  animation-delay: 0.7s;
+  background-color: rgb(59, 58, 58);
+}
+@keyframes load {
+  0% {
+    height: 5px;
+  }
+  50% {
+    height: 80px;
+  }
+  100% {
+    height: 5px;
+  }
+}
+/* preloader end  */
+
 html {
   scroll-behavior: smooth;
 }
