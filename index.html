@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS</title>
+    <!-- title icon  -->
     <link rel="shortcut icon" href="download.jpg">
-    <link rel="stylesheet" href="project2.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhaina+2?query=baloo+bh">
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="CSS/mainbts.css">
+    <link rel="stylesheet" href="CSS/preloader.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/media.css">
+
+
+    <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhaina+2?query=baloo+bh"> -->
+    <!-- AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--font-awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -24,36 +35,32 @@
         <span class="sp"></span>
         <span class="sp"></span>
     </div>
+    <!-- preloader end  -->
 
-    <header class="header">
-        <!-- left side -->
-        <div class="left symbol">
-            <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank"> <img src="images/logo.jpg"
-                    alt=""></a>
-            <h3>LOVE YOURSELF</h3>
-        </div>
-        <!-- center side    -->
-        <div class="center">
-            <nav class="navbar">
-                <ul>
-                    <div>
-                        <li> <a href="#rm">RM</a> </li>
-                        <li> <a href="#jin"> JIN</a> </li>
-                        <li> <a href="#jimin"> JIMIN</a> </li>
-                        <li> <a href="#jk">JK</a> </li>
-                        <li> <a href="#v">V</a> </li>
-                        <li> <a href="#j-hope"> J HOPE</a></li>
-                        <li> <a href="#suga">SUGA</a> </li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-        <!-- right side  -->
-        <div class="right">
-            <input type="text" name="name" class="Search" placeholder="Search here">
 
+    <!-- navbar icon  -->
+    <div class="icon-area">
+        <div class="single-icon">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </div>
+    <header>
+        <nav id="navbar">
+            <div id="navlogo">
+                <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank"> <img src="images/logo.jpg"
+                        alt=""></a>
+                <h3>LOVE YOURSELF</h3>
+            </div>
+            <ul>
+                <li><a href="">Members</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">StoryLine</a></li>
+            </ul>
+        </nav>
     </header>
+
     <p class="magic">Purple means Love forever :)</p>
     <div class="image">
         <img src="images/mainimg3.jpg" alt="" class="btsimg">
@@ -189,6 +196,9 @@
     </footer>
 
 </body>
+<!-- jquery CDN  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- AOS  -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
@@ -199,6 +209,24 @@
     function myFunction() {
         preloader.style.display = 'none';
     }
+    // navbar scroll effect js 
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop()) {
+            $('#navbar').addClass('effectbg')
+        }
+        else {
+            $('#navbar').removeClass('effectbg')
+        }
+    })
+
+
+    // media navbar 
+    $(document).ready(function () {
+            $('.single-icon').click(function () {
+                $(this).toggleClass('animate')
+                $('#navbar').slideToggle()
+            })
+        })
 </script>
 
 </html>
