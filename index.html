@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BTS</title>
     <!-- title icon  -->
-    <link rel="shortcut icon" href="download.jpg">
+    <link rel="shortcut icon" href="download.jpg" />
 
     <!-- css files  -->
-    <link rel="stylesheet" href="CSS/mainbts.css">
+    <link rel="stylesheet" href="CSS/mainbts.css" />
 
-    <link rel="stylesheet" href="CSS/preloader.css">
-     <!-- preloader taking more time need to work -->
-    <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="stylesheet" href="CSS/media.css">
-
+    <link rel="stylesheet" href="CSS/preloader.css" />
+    <!-- preloader taking more time need to work -->
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
 
     <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhaina+2?query=baloo+bh"> -->
     <!-- AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--font-awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body >
+  <body onload="loadfun()">
+    <!--CSS Spinner-->
+    <div id="loading">
+      
+    </div>
     <!-- preloader function  -->
     <!-- <div id="loading">
         <span class="sp"></span>
@@ -39,192 +45,224 @@
     </div> -->
     <!-- preloader end  -->
 
-
     <!-- navbar icon  for mobile-->
     <div class="icon-area">
-        <div class="single-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div class="single-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <!-- navbar icon end-->
     <header>
-        <nav id="navbar">
-            <div id="navlogo">
-                <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank"> <img src="images/logo.jpg"
-                        alt=""></a>
-                <h3>LOVE YOURSELF</h3>
-            </div>
-            <ul>
-                <li><a href="#">Members</a></li>
-                <li><a href="#">Latest</a></li>
-                <li><a href="#">StoryLine</a></li>
-            </ul>
-        </nav>
+      <nav id="navbar">
+        <div id="navlogo">
+          <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank">
+            <img src="images/logo.jpg" alt=""
+          /></a>
+          <h3>LOVE YOURSELF</h3>
+        </div>
+        <ul>
+          <li><a href="#">Members</a></li>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">StoryLine</a></li>
+        </ul>
+      </nav>
     </header>
 
     <p class="magic">Purple means Love forever :)</p>
     <div class="image">
-        <img src="images/mainimg3.jpg" alt="" class="btsimg">
-        <p id="img-caption">If you want to love others, you should love yourself first -BTS</p>
+      <img src="images/mainimg3.jpg" alt="" class="btsimg" />
+      <p id="img-caption">
+        If you want to love others, you should love yourself first -BTS
+      </p>
     </div>
-
 
     <!-- card section  -->
     <div class="container">
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="10px">
-            <div class="card rm">
-                <div class="imgBx">
-                    <img src="images/rm.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>RM</h1>
-                    <p>If you want to love others, I think you should love yourself first.</p>
-                    <audio controls>
-                        <source src="music/BTS RM - PERSONA (Color Coded Eng Rom Han 가사).mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="10px">
+        <div class="card rm">
+          <div class="imgBx">
+            <img src="images/rm.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>RM</h1>
+            <p>
+              If you want to love others, I think you should love yourself
+              first.
+            </p>
+            <audio controls>
+              <source
+                src="music/BTS RM - PERSONA (Color Coded Eng Rom Han 가사).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
-            <div class="card jin">
-                <div class="imgBx">
-                    <img src="images/Jin.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>JIN</h1>
-                    <p>You are really the one who needs to acknowledge your efforts.</p>
-                    <audio controls>
-                        <source src="music/BTS JIN – EPIPHANY [Color Coded_Han_Rom_Eng].mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
+        <div class="card jin">
+          <div class="imgBx">
+            <img src="images/Jin.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>JIN</h1>
+            <p>You are really the one who needs to acknowledge your efforts.</p>
+            <audio controls>
+              <source
+                src="music/BTS JIN – EPIPHANY [Color Coded_Han_Rom_Eng].mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
-            <div class="card jimin">
-                <div class="imgBx">
-                    <img src="images/jimin.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>JIMIN</h1>
-                    <p>Go on your path, even if you live for a day.</p>
-                    <audio controls>
-                        <source src="music/BTS JIMIN – SERENDIPITY (Full Length Edition) Easy.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
+        <div class="card jimin">
+          <div class="imgBx">
+            <img src="images/jimin.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>JIMIN</h1>
+            <p>Go on your path, even if you live for a day.</p>
+            <audio controls>
+              <source
+                src="music/BTS JIMIN – SERENDIPITY (Full Length Edition) Easy.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
-            <div class="card jk">
-                <div class="imgBx">
-                    <img src="images/jk.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>JUNGKOOK</h1>
-                    <p>Living without passion is living dead.</p>
-                    <audio controls>
-                        <source src="music/Euphoria.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
+        <div class="card jk">
+          <div class="imgBx">
+            <img src="images/jk.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>JUNGKOOK</h1>
+            <p>Living without passion is living dead.</p>
+            <audio controls>
+              <source src="music/Euphoria.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="10px">
-            <div class="card v">
-                <div class="imgBx">
-                    <img src="images/V.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>V</h1>
-                    <p>Don't be trapped in someone else's dream</p>
-                    <audio controls>
-                        <source src="music/BTS V - Winter Bear (Color Coded Eng).mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="10px">
+        <div class="card v">
+          <div class="imgBx">
+            <img src="images/V.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>V</h1>
+            <p>Don't be trapped in someone else's dream</p>
+            <audio controls>
+              <source
+                src="music/BTS V - Winter Bear (Color Coded Eng).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
-            <div class="card jhope">
-                <div class="imgBx">
-                    <img src="images/jhope.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>J-HOPE</h1>
-                    <p>If you don't work hard, there won't be good results
-                    </p>
-                    <audio controls>
-                        <source src="music/BTS J-Hope (제이홉) - Airplane [Color Coded Han Rom Eng 가사].mp3"
-                            type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
+        <div class="card jhope">
+          <div class="imgBx">
+            <img src="images/jhope.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>J-HOPE</h1>
+            <p>If you don't work hard, there won't be good results</p>
+            <audio controls>
+              <source
+                src="music/BTS J-Hope (제이홉) - Airplane [Color Coded Han Rom Eng 가사].mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
-            <div class="card suga">
-                <div class="imgBx">
-                    <img src="images/suga.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>SUGA</h1>
-                    <p>If you don't work hard, there won't be good results</p>
-                    <audio controls>
-                        <source src="music/BTS Suga (AGUST D) - Agust D [Color Coded Han Rom Eng 가사].mp3"
-                            type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80px">
+        <div class="card suga">
+          <div class="imgBx">
+            <img src="images/suga.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h1>SUGA</h1>
+            <p>If you don't work hard, there won't be good results</p>
+            <audio controls>
+              <source
+                src="music/BTS Suga (AGUST D) - Agust D [Color Coded Han Rom Eng 가사].mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end  -->
 
     <div data-aos="fade-up" data-aos-duration="1500">
-        <div class="allmembervideo">
-            <iframe class="video" src="https://www.youtube.com/embed/-LdSbArooYk" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
+      <div class="allmembervideo">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/-LdSbArooYk"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
-
-
     <footer>
-        <div class="socal">
-            <a href="https://www.facebook.com/vaibhav.bhapkar.1654" target="_blank"><i
-                    class="fa fa-facebook-official fa-2x"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            <a href="https://github.com/Vaibhav-84" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-            <a href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        </div>
-        <p> Copyright © 2020 BTS.com</p>
+      <div class="socal">
+        <a href="https://www.facebook.com/vaibhav.bhapkar.1654" target="_blank"
+          ><i class="fa fa-facebook-official fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/_.vaibhav_b/" target="_blank"
+          ><i class="fa fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://github.com/Vaibhav-84" target="_blank"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/explore" target="_blank"
+          ><i class="fa fa-twitter fa-2x"></i
+        ></a>
+      </div>
+      <p>Copyright © 2021 BTS.com</p>
     </footer>
+  <script>
+  var load = document.getElementById("loading")
+  function loadfun(){
+      load.style.display='none'
+  }
+  </script>
+    
+  </body>
 
-</body>
-<script src="JS/preloader.js"></script>
-<!-- jquery CDN  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- AOS  -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+  <script src="JS/preloader.js"></script>
+  <!-- jquery CDN  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- AOS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init();
 
-    // navbar scroll effect js 
-    $(window).on('scroll', function () {
-        if ($(window).scrollTop()) {
-            $('#navbar').addClass('effectbg')
-        }
-        else {
-            $('#navbar').removeClass('effectbg')
-        }
-    })
+    // navbar scroll effect js
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        $("#navbar").addClass("effectbg");
+      } else {
+        $("#navbar").removeClass("effectbg");
+      }
+    });
 
-
-    // media navbar 
+    // media navbar
     $(document).ready(function () {
-            $('.single-icon').click(function () {
-                $(this).toggleClass('animate')
-                $('#navbar').slideToggle()
-            })
-        })
-</script>
-
+      $(".single-icon").click(function () {
+        $(this).toggleClass("animate");
+        $("#navbar").slideToggle();
+      });
+    });
+  </script>
 </html>
