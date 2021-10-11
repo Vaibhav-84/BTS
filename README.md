@@ -36,7 +36,7 @@ $ git clone  https://github.com/Vaibhav-84/BTS.git
 To run the website on your computer click on index.html
 
 
-﻿# HacktoberFest_2021_Utility_Apps
+﻿# HacktoberFest_2021
 
 ## How to contribute?
 
